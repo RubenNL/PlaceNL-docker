@@ -1,0 +1,13 @@
+version: '3'
+services:
+  firefox:
+    image: jlesage/firefox
+    ports:
+      - "5800:5800"
+    volumes:
+      - "./config:/config:rw"
+    environment:
+      FF_PREF_FIRSTLAUNCH_REDDIT: startup.homepage_welcome_url="https://reddit.com/r/placenl"
+      FF_PREF_USERSCRIPT_DOWNLOAD: startup.homepage_welcome_url.additional="data:text/html,<script>setTimeout(()=>window.location='https://github.com/PlaceNL/Userscript/releases/download/latest/placenl-userscript-autoupdater.user.js',5000)</script>"
+      FF_PREF_REDDIT: browser.startup.homepage="https://reddit.com/r/placenl"
+      FF_PREF_FORCE_EXTENSION: extensions.autoDisableScopes=14

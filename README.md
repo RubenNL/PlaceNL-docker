@@ -27,7 +27,3 @@ CPU: One that's compatible with one of those CPU architectures:
 
 RAM: Between 600 and 800 mb of RAM free. Firefox uses a lot of memory.  
 Storage: 1GB of free space should be more than enough.  
-
-## Note
-
-As this code is written before the canvas has been opened, the URL isn't yet known. In docker-compose.yml `https://reddit.com/r/placenl` is a placeholder for this URL. As long as this isn't replaced with the correct one, it can't restart in the background without manual intervention.

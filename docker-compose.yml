@@ -12,3 +12,4 @@ services:
       FF_PREF_USERSCRIPT_DOWNLOAD: startup.homepage_welcome_url.additional="data:text/html,<script>setTimeout(()=>window.location='https://github.com/PlaceNL/Userscript/releases/download/latest/placenl-userscript-autoupdater.user.js',5000)</script>" #On first launch, wait a bit for tampermonkey to be installed, then open the PlaceNL script. This should popup a tab with the install button.
       FF_PREF_REDDIT: browser.startup.homepage="https://reddit.com/r/placenl" #Also open the canvas on every other launch.
       FF_PREF_FORCE_EXTENSION: extensions.autoDisableScopes=14 #without this, tampermonkey gets ignored.
+      FF_PREF_DISABLE_RESTORE_SESSION: browser.sessionstore.resume_from_crash=false #Disable "restore session" stuff.

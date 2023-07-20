@@ -2,6 +2,8 @@
 
 This is the [PlaceNL autoplacer](https://github.com/PlaceNL/Userscript) wrapped in a Docker container with Firefox and Tampermonkey.
 
+If you have never used Docker, please use the [official userscript](https://github.com/PlaceNL/Userscript), not this docker version. This repo isn't for the average user.
+
 ## Setup
 
 1. Download this repo.
@@ -13,6 +15,18 @@ This is the [PlaceNL autoplacer](https://github.com/PlaceNL/Userscript) wrapped 
 1. Navigate to the r/place canvas.
 
 This should be it.
+
+## System requirements
+
+CPU: One that's compatible with one of those CPU architectures:
+
+* linux/amd64
+* linux/arm64
+* linux/arm/v7
+* linux/386
+
+RAM: Between 600 and 800 mb of RAM free. Firefox uses a lot of memory.  
+Storage: 1GB of free space should be more than enough.  
 
 ## Note
 

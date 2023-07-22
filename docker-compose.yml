@@ -13,3 +13,4 @@ services:
       FF_PREF_REDDIT: browser.startup.homepage="https://new.reddit.com/r/place/#" #Also open the canvas on every other launch.
       FF_PREF_FORCE_EXTENSION: extensions.autoDisableScopes=14 #without this, tampermonkey gets ignored.
       FF_PREF_DISABLE_RESTORE_SESSION: browser.sessionstore.resume_from_crash=false #Disable "restore session" stuff.
+      TZ: CET #Change timezone to Dutch time. This should fix the 2 hour offset with the "Placing next pixel at" message
